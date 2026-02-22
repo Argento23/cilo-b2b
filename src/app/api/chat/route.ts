@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+export const dynamic = 'force-dynamic';
 import { CILO_AI_CONFIG } from '@/data/ai-config';
 import { products } from '@/data/products';
 
