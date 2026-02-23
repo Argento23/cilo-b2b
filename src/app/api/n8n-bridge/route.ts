@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
     try {
         const body = await req.json();
-        const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL_CILO || 'https://manager.generarise.space/webhook/cilo-leads';
+        const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL_CILO || 'https://manager.agentes.space/webhook/cilo-leads';
 
         console.log('📤 Forwarding data to n8n:', body);
 
