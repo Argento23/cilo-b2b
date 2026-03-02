@@ -23,7 +23,7 @@ export const products: Product[] = [
         name: 'Anillos Bañados',
         category: 'Bañadas',
         description: 'Deliciosos anillos bañados en chocolate. Perfectos para cualquier ocasión.',
-        image: '/products/ANILL BAÑ 300.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/ANILL-BA%C3%91-300.png',
         weight: '300g',
         featured: true,
     },
@@ -32,7 +32,7 @@ export const products: Product[] = [
         name: 'Anillos de Vainilla',
         category: 'Clásicas',
         description: 'Crujientes anillos con el clásico sabor a vainilla.',
-        image: '/products/ANILLOS VAIN 200 GRS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/ANILLOS-VAIN-200-GRS.png',
         weight: '200g',
         featured: true,
     },
@@ -41,7 +41,7 @@ export const products: Product[] = [
         name: 'Anillos de Limón',
         category: 'Clásicas',
         description: 'Refrescantes anillos con un toque cítrico de limón.',
-        image: '/products/anillos limonn.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/anillos-limonn.png',
     },
 
     // Bizcochos
@@ -50,7 +50,7 @@ export const products: Product[] = [
         name: 'Bizcocho con Azúcar',
         category: 'Tradicionales',
         description: 'El clásico bizcocho argentino, ideal para el mate.',
-        image: '/products/BIZCOCH AZUC.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/BIZCOCH-AZUC.png',
         featured: true,
     },
     {
@@ -58,7 +58,7 @@ export const products: Product[] = [
         name: 'Bizcocho de Grasa',
         category: 'Tradicionales',
         description: 'Bizcocho tradicional de grasa, un sabor inconfundible.',
-        image: '/products/BIZCOCH GRASA.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/BIZCOCH-GRASA.png',
     },
 
     // Buquitas
@@ -67,14 +67,14 @@ export const products: Product[] = [
         name: 'Buquitas de Chocolate',
         category: 'Premium',
         description: 'Pequeñas delicias bañadas en chocolate de primera calidad.',
-        image: '/products/BUQUITAS CHOCO.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/BUQUITAS-CHOCO.png',
     },
     {
         id: 'buquitas-limon',
         name: 'Buquitas de Limón',
         category: 'Premium',
         description: 'Buquitas con un refrescante sabor a limón.',
-        image: '/products/BUQUITAS LIMON.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/BUQUITAS-LIMON.png',
     },
 
     // Chips
@@ -83,7 +83,7 @@ export const products: Product[] = [
         name: 'Chips de Chocolate',
         category: 'Premium',
         description: 'Galletas con chips de chocolate belga. Irresistibles.',
-        image: '/products/CHIPS 150 GRS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/CHIPS-150-GRS.png',
         weight: '150g',
         featured: true,
     },
@@ -92,7 +92,7 @@ export const products: Product[] = [
         name: 'Chips',
         category: 'Premium',
         description: 'Deliciosas cookies con chips de chocolate.',
-        image: '/products/CHIPS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/CHIPS.png',
     },
 
     // Doblinas
@@ -101,14 +101,14 @@ export const products: Product[] = [
         name: 'Doblinas de Batata',
         category: 'Rellenas',
         description: 'Crujientes galletitas rellenas con dulce de batata.',
-        image: '/products/DOBLIN BATAT.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/DOBLIN-BATAT.png',
     },
     {
         id: 'doblinas-membrillo',
         name: 'Doblinas de Membrillo',
         category: 'Rellenas',
         description: 'Galletitas rellenas con auténtico dulce de membrillo.',
-        image: '/products/DOBLINAS MEMB.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/doblinas-13.jpg',
     },
 
     // Lengüitas
@@ -117,7 +117,7 @@ export const products: Product[] = [
         name: 'Lengüitas Bañadas',
         category: 'Bañadas',
         description: 'Nuestro producto estrella. Lengüitas bañadas en chocolate.',
-        image: '/products/LENG BAÑ 300.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/LENG-BA%C3%91-300.png',
         weight: '300g',
         featured: true,
     },
@@ -126,14 +126,14 @@ export const products: Product[] = [
         name: 'Lengüitas de Coco',
         category: 'Clásicas',
         description: 'Delicadas lengüitas con el sabor tropical del coco.',
-        image: '/products/LENG COCO.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/LENG-COCO.png',
     },
     {
         id: 'lenguas-membrillo-200',
         name: 'Lengüitas de Membrillo',
         category: 'Rellenas',
         description: 'Lengüitas rellenas con dulce de membrillo.',
-        image: '/products/LENG MEMB 200 GRS..png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/LENG-MEMB-200-GRS..png',
         weight: '200g',
     },
     {
@@ -141,7 +141,7 @@ export const products: Product[] = [
         name: 'Lengüitas Vainilla Bañadas',
         category: 'Bañadas',
         description: 'Lengüitas de vainilla bañadas en chocolate.',
-        image: '/products/LENG VAI BAÑ 300.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/LENG-VAI-BA%C3%91-300.png',
         weight: '300g',
     },
     {
@@ -149,7 +149,7 @@ export const products: Product[] = [
         name: 'Lengüitas de Vainilla',
         category: 'Clásicas',
         description: 'El clásico sabor a vainilla en nuestras lengüitas.',
-        image: '/products/LENG VAIN 200 GRS..png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/LENG-VAIN-200-GRS..png',
         weight: '200g',
     },
 
@@ -159,7 +159,7 @@ export const products: Product[] = [
         name: 'Paquete de Miel',
         category: 'Tradicionales',
         description: 'Galletitas con el dulce sabor de la miel.',
-        image: '/products/PAQUETE MIEL.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/PAQUETE-MIEL.png',
     },
 
     // Pepitas
@@ -168,7 +168,7 @@ export const products: Product[] = [
         name: 'Pepitas',
         category: 'Clásicas',
         description: 'Clásicas pepitas crujientes.',
-        image: '/products/PEPAS 200 GRS..png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/PEPAS-200-GRS..png',
         weight: '200g',
     },
     {
@@ -176,7 +176,7 @@ export const products: Product[] = [
         name: 'Pepitas Bañadas',
         category: 'Bañadas',
         description: 'Pepitas bañadas en chocolate de primera calidad.',
-        image: '/products/PEPAS BAÑ 300.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/PEPAS-BA%C3%91-300.png',
         weight: '300g',
     },
     {
@@ -184,14 +184,14 @@ export const products: Product[] = [
         name: 'Pepitas Semi Bañadas',
         category: 'Bañadas',
         description: 'Pepitas parcialmente bañadas en chocolate.',
-        image: '/products/PEPAS SEMI BAÑ.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/PEPAS-SEMI-BA%C3%91.png',
     },
     {
         id: 'pepitas-vegetal',
         name: 'Pepitas Vegetal',
         category: 'Clásicas',
         description: 'Pepitas elaboradas con grasa vegetal.',
-        image: '/products/PEPAS VEGETAL.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/PEPAS-VEGETAL.png',
     },
 
     // Especiales
@@ -200,21 +200,21 @@ export const products: Product[] = [
         name: 'Polvorón',
         category: 'Tradicionales',
         description: 'Tradicionales polvorones que se deshacen en la boca.',
-        image: '/products/POLVORON.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/POLVORON.png',
     },
     {
         id: 'scones',
         name: 'Scones',
         category: 'Premium',
         description: 'Scones artesanales, perfectos para el té.',
-        image: '/products/SCONS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/SCONS.png',
     },
     {
         id: 'surtidas',
         name: 'Surtidas',
         category: 'Premium',
         description: 'Mix de nuestras mejores galletitas. Variedad garantizada.',
-        image: '/products/SURTIDAS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/SURTIDAS.png',
         featured: true,
     },
     {
@@ -222,7 +222,7 @@ export const products: Product[] = [
         name: 'Topings',
         category: 'Premium',
         description: 'Galletitas decoradas con deliciosos toppings.',
-        image: '/products/TOPINGS.png',
+        image: 'https://cilo.com.ar/wp-content/uploads/2019/11/TOPINGS.png',
     },
 ];
 
