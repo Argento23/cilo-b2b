@@ -6,6 +6,12 @@ export interface Product {
     image: string;
     weight?: string;
     featured?: boolean;
+    packagingImages?: string[]; // Nuevas imágenes complementarias de formatos
+    technicalSpecs?: {
+        ingredients?: string;
+        nutrition?: string;
+        formats?: string[];
+    };
 }
 
 export const productCategories = [
@@ -109,6 +115,14 @@ export const products: Product[] = [
         category: 'Rellenas',
         description: 'Galletitas rellenas con auténtico dulce de membrillo.',
         image: 'https://cilo.com.ar/wp-content/uploads/2019/11/doblinas-13.jpg',
+        packagingImages: [
+            'https://cilo.com.ar/wp-content/uploads/2019/11/FRESH-PACK-MEMB-12.jpg',
+            'https://cilo.com.ar/wp-content/uploads/2019/11/CAJA-DOBLIN-MEMB-10.jpg'
+        ],
+        technicalSpecs: {
+            ingredients: 'Harina de trigo enriquecida, dulce de membrillo, margarina, azúcar...',
+            formats: ['Fresh Pack 15 x 200g', 'Caja 12 x 400g', 'Granel x 4kg']
+        }
     },
 
     // Lengüitas

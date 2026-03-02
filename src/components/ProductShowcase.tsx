@@ -6,6 +6,7 @@ import { products, productCategories } from '@/data/products';
 
 export default function ProductShowcase() {
     const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
+    const [viewingProduct, setViewingProduct] = useState<any>(null);
 
     const filteredProducts = selectedCategory === 'Todos'
         ? products
@@ -13,6 +14,86 @@ export default function ProductShowcase() {
 
     return (
         <section id="productos" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            {/* Modal de Detalle */}
+            {viewingProduct && (
+                <div className="fixed inset-0 bg-black/60 z-[2000] flex items-center justify-center p-4 backdrop-blur-sm">
+                    <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+                        <div className="p-6 md:p-8">
+                            <div className="flex justify-between items-start mb-6">
+                                <h3 className="text-3xl font-bold text-cilo-dark">{viewingProduct.name}</h3>
+                                <button
+                                    onClick={() => setViewingProduct(null)}
+                                    className="text-gray-400 hover:text-cilo-primary text-2xl"
+                                >✕</button>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-8">
+                                {/* Galería */}
+                                <div>
+                                    <div className="bg-gray-100 rounded-xl p-4 mb-4">
+                                        <Image
+                                            src={viewingProduct.image}
+                                            alt={viewingProduct.name}
+                                            width={400}
+                                            height={300}
+                                            className="w-full h-auto object-contain"
+                                        />
+                                    </div>
+                                    {viewingProduct.packagingImages && (
+                                        <div className="grid grid-cols-3 gap-2">
+                                            {viewingProduct.packagingImages.map((img: string, i: number) => (
+                                                <div key={i} className="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                                    <Image
+                                                        src={img}
+                                                        alt="Presentación"
+                                                        width={100}
+                                                        height={100}
+                                                        className="w-full h-auto object-contain"
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* Info */}
+                                <div>
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-2">Descripción</h4>
+                                    <p className="text-gray-600 mb-6">{viewingProduct.description}</p>
+
+                                    {viewingProduct.technicalSpecs?.ingredients && (
+                                        <>
+                                            <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-2">Ingredientes / Composición</h4>
+                                            <p className="text-sm text-gray-500 mb-6 italic">{viewingProduct.technicalSpecs.ingredients}</p>
+                                        </>
+                                    )}
+
+                                    {viewingProduct.technicalSpecs?.formats && (
+                                        <>
+                                            <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-2">Formatos Disponibles</h4>
+                                            <ul className="grid grid-cols-1 gap-2 mb-8">
+                                                {viewingProduct.technicalSpecs.formats.map((f: string, i: number) => (
+                                                    <li key={i} className="flex items-center gap-2 text-sm text-cilo-dark font-medium bg-cilo-accent/30 p-2 rounded-lg">
+                                                        <span className="text-cilo-primary">📦</span> {f}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </>
+                                    )}
+
+                                    <button
+                                        className="btn-primary w-full py-4 text-center"
+                                        onClick={() => window.open(`https://wa.me/5491157633328?text=Hola,%20me%20interesa%20el%20producto%20${viewingProduct.name}`, '_blank')}
+                                    >
+                                        Consultar Stock Mayorista
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
@@ -55,7 +136,8 @@ export default function ProductShowcase() {
                     {filteredProducts.map((product) => (
                         <div
                             key={product.id}
-                            className="card group hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                            onClick={() => setViewingProduct(product)}
+                            className="card group hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer"
                         >
                             {/* Product Image */}
                             <div className="relative w-full h-48 mb-4 bg-white rounded-lg overflow-hidden">
