@@ -32,7 +32,7 @@ export const products: Product[] = [
         image: '/products/ANILL BAÑ 300.png',
         weight: '300g',
         featured: true,
-        packagingImages: ['https://cilo.com.ar/wp-content/uploads/2020/01/3d-anillos-fuxia-2-969x1024-1.jpg'],
+        packagingImages: ['/products/3d-anillos-fuxia-2-969x1024-1.jpg'],
         technicalSpecs: {
             formats: ['Bolsa 300g', 'Caja Master 12 x 300g']
         }
@@ -79,7 +79,7 @@ export const products: Product[] = [
         image: '/products/ANILLOS VAIN 200 GRS.png',
         weight: '200g',
         featured: true,
-        packagingImages: ['https://cilo.com.ar/wp-content/uploads/2019/11/anillos-vainilla-10-1024x518.jpg']
+        packagingImages: ['/products/anillos-vainilla-10-1024x518.jpg']
     },
     {
         id: 'anillos-limon',
@@ -134,8 +134,7 @@ export const products: Product[] = [
         description: 'Galletitas rellenas con auténtico dulce de membrillo.',
         image: '/products/DOBLINAS MEMB.png',
         packagingImages: [
-            'https://cilo.com.ar/wp-content/uploads/2020/01/3d-doblinas-2-872x1024-1.jpg',
-            'https://cilo.com.ar/wp-content/uploads/2019/11/doblinas-13.jpg'
+            '/products/doblinas-13.jpg'
         ],
         technicalSpecs: {
             formats: ['Fresh Pack 15 x 200g', 'Caja 12 x 400g', 'Granel x 4kg']
@@ -148,7 +147,7 @@ export const products: Product[] = [
         description: 'Lengüitas rellenas con dulce de membrillo.',
         image: '/products/LENG MEMB 200 GRS..png',
         weight: '200g',
-        packagingImages: ['https://cilo.com.ar/wp-content/uploads/2021/11/3d-memb-6.png']
+        packagingImages: ['/products/placas-web-leng-rell.jpg']
     },
 
     // Premium
@@ -158,6 +157,7 @@ export const products: Product[] = [
         category: 'Premium',
         description: 'Pequeñas delicias bañadas en chocolate de primera calidad.',
         image: '/products/BUQUITAS CHOCO.png',
+        packagingImages: ['/products/placa-web-buquitas-1.jpg'],
     },
     {
         id: 'buquitas-limon',
@@ -174,6 +174,7 @@ export const products: Product[] = [
         image: '/products/CHIPS 150 GRS.png',
         weight: '150g',
         featured: true,
+        packagingImages: ['/products/WEB-CHIPS-scaled.jpg'],
     },
     {
         id: 'chips',
@@ -188,6 +189,7 @@ export const products: Product[] = [
         category: 'Premium',
         description: 'Scones artesanales, perfectos para el té.',
         image: '/products/SCONS.png',
+        packagingImages: ['/products/Scons-paint.jpg'],
     },
     {
         id: 'surtidas',
@@ -203,6 +205,7 @@ export const products: Product[] = [
         category: 'Premium',
         description: 'Galletitas decoradas con deliciosos toppings.',
         image: '/products/TOPINGS.png',
+        packagingImages: ['/products/WEB-TOPINGS-scaled.jpg'],
     },
 
     // Tradicionales
@@ -213,6 +216,7 @@ export const products: Product[] = [
         description: 'El clásico bizcocho argentino, ideal para el mate.',
         image: '/products/BIZCOCH AZUC.png',
         featured: true,
+        packagingImages: ['/products/bizcochos-azucarados-06.jpg'],
     },
     {
         id: 'bizcocho-grasa',
@@ -220,6 +224,7 @@ export const products: Product[] = [
         category: 'Tradicionales',
         description: 'Bizcocho tradicional de grasa, un sabor inconfundible.',
         image: '/products/BIZCOCH GRASA.png',
+        packagingImages: ['/products/bizcochos-grasa-07.jpg'],
     },
     {
         id: 'paquete-miel',
@@ -227,6 +232,7 @@ export const products: Product[] = [
         category: 'Tradicionales',
         description: 'Galletitas con el dulce sabor de la miel.',
         image: '/products/PAQUETE MIEL.png',
+        packagingImages: ['/products/WEB-MIEL-scaled.jpg'],
     },
     {
         id: 'polvoron',
@@ -234,6 +240,7 @@ export const products: Product[] = [
         category: 'Tradicionales',
         description: 'Tradicionales polvorones que se deshacen en la boca.',
         image: '/products/POLVORON.png',
+        packagingImages: ['/products/polvoron-vainilla-12.jpg'],
     },
 ];
 
