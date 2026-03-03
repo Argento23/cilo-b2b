@@ -40,14 +40,14 @@ export default function ProductShowcase() {
                                         />
                                     </div>
                                     {viewingProduct.packagingImages && (
-                                        <div className="grid grid-cols-3 gap-2">
+                                        <div className="flex flex-col gap-4 mt-6">
                                             {viewingProduct.packagingImages.map((img: string, i: number) => (
-                                                <div key={i} className="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                                <div key={i} className="bg-gray-50 rounded-xl overflow-hidden shadow-sm">
                                                     <Image
                                                         src={img}
-                                                        alt="Presentación"
-                                                        width={100}
-                                                        height={100}
+                                                        alt="Presentación Adicional"
+                                                        width={800}
+                                                        height={800}
                                                         className="w-full h-auto object-contain"
                                                     />
                                                 </div>
