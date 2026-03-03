@@ -39,21 +39,6 @@ export default function ProductShowcase() {
                                             className="w-full h-auto object-contain"
                                         />
                                     </div>
-                                    {viewingProduct.packagingImages && (
-                                        <div className="flex flex-col gap-4 mt-6">
-                                            {viewingProduct.packagingImages.map((img: string, i: number) => (
-                                                <div key={i} className="bg-gray-50 rounded-xl overflow-hidden shadow-sm">
-                                                    <Image
-                                                        src={img}
-                                                        alt="Presentación Adicional"
-                                                        width={800}
-                                                        height={800}
-                                                        className="w-full h-auto object-contain"
-                                                    />
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
                                 </div>
 
                                 {/* Info */}
@@ -89,6 +74,26 @@ export default function ProductShowcase() {
                                     </button>
                                 </div>
                             </div>
+
+                            {/* Imágenes Secundarias (Full Width) */}
+                            {viewingProduct.packagingImages && (
+                                <div className="mt-10 border-t border-gray-100 pt-8">
+                                    <h4 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-6 text-center">Información Adicional</h4>
+                                    <div className="flex flex-col gap-8 w-full">
+                                        {viewingProduct.packagingImages.map((img: string, i: number) => (
+                                            <div key={i} className="w-full rounded-xl overflow-hidden bg-white">
+                                                <Image
+                                                    src={img}
+                                                    alt="Presentación Adicional"
+                                                    width={1200}
+                                                    height={1200}
+                                                    className="w-full h-auto object-contain mx-auto"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
