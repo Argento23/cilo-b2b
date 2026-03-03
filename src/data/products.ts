@@ -87,6 +87,7 @@ export const products: Product[] = [
         category: 'Clásicas',
         description: 'Refrescantes anillos con un toque cítrico de limón.',
         image: '/products/anillos limonn.png',
+        packagingImages: ['/products/anillos-limon-11.jpg'],
     },
     {
         id: 'lenguas-coco',
@@ -94,6 +95,7 @@ export const products: Product[] = [
         category: 'Clásicas',
         description: 'Delicadas lengüitas con el sabor tropical del coco.',
         image: '/products/LENG COCO.png',
+        packagingImages: ['/products/coco-paint.jpg'],
     },
     {
         id: 'lenguas-vainilla-200',
@@ -102,6 +104,7 @@ export const products: Product[] = [
         description: 'El clásico sabor a vainilla en nuestras lengüitas.',
         image: '/products/LENG VAIN 200 GRS..png',
         weight: '200g',
+        packagingImages: ['/products/lenguitas-08.jpg'],
     },
     {
         id: 'pepitas-200',
@@ -110,6 +113,7 @@ export const products: Product[] = [
         description: 'Clásicas pepitas crujientes.',
         image: '/products/PEPAS 200 GRS..png',
         weight: '200g',
+        packagingImages: ['/products/pepas-18-1.jpg'],
     },
     {
         id: 'pepitas-vegetal',
@@ -117,6 +121,7 @@ export const products: Product[] = [
         category: 'Clásicas',
         description: 'Pepitas elaboradas con grasa vegetal.',
         image: '/products/PEPAS VEGETAL.png',
+        packagingImages: ['/products/pepa-light-14-1.jpg'],
     },
 
     // Rellenas
@@ -126,6 +131,7 @@ export const products: Product[] = [
         category: 'Rellenas',
         description: 'Crujientes galletitas rellenas con dulce de batata.',
         image: '/products/DOBLIN BATAT.png',
+        packagingImages: ['/products/doblinas-13.jpg'],
     },
     {
         id: 'doblinas-membrillo',
@@ -165,6 +171,7 @@ export const products: Product[] = [
         category: 'Premium',
         description: 'Buquitas con un refrescante sabor a limón.',
         image: '/products/BUQUITAS LIMON.png',
+        packagingImages: ['/products/placa-web-buquitas-1.jpg'],
     },
     {
         id: 'chips-150',
@@ -198,6 +205,7 @@ export const products: Product[] = [
         description: 'Mix de nuestras mejores galletitas. Variedad garantizada.',
         image: '/products/SURTIDAS.png',
         featured: true,
+        packagingImages: ['/products/FOLLETO 1.jpg'],
     },
     {
         id: 'topings',
